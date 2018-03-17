@@ -30,11 +30,6 @@ content: "";
 /* Fix badly aligned level */
 span.userlevel {top:-2px;}
 
-
-.postrender .postinner > .postuser .postavatar {
-	margin-top: 1.5rem;
-}
-
 /* More level info on posts */
 .userlevel {
     width: 100%;
