@@ -30,45 +30,35 @@ content: "";
 /* Fix badly aligned level */
 span.userlevel {top:-2px;}
 
-/* More level info on posts */
-.userlevel {
-    width: 100%;
-    text-align: right;
-}
-
-.userlevel::after {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: auto;
-    content: attr(title);
-    display: inline-block;
-    padding: 2px 6px;
-}
-
-span.userlevel {
-    display: inline-block;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    left: auto;
-    padding: 2px 6px;
-    text-shadow: 1px 1px 4px #333;
-    font-size: 0.6rem;
-    border-radius: 0;
-}
-
+/* Avatar alignment fixes */
 .postrender .postinner > .postuser {
-    padding: 0px;
+	padding: 0px;
 }
 
 .postrender .postinner > .postuser .username {
-    text-align: center;
-    text-shadow: 1px 1px 0px #0009;
-    font-weight: bolder;
-    padding-bottom: 0.8rem;
-    padding-top: 1.7rem;
-    top: 0px;
+	text-align: center;
+	text-shadow: 0.25px 0.25px 0.25px #666;
+	font-weight: bolder;
+	padding-bottom: 2.0rem;
+	padding-top: 0px;
+	top: 0px;
+}
+
+span.userlevel {
+	display: flex;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: auto;
+	border-radius: unset;
+	border-bottom-left-radius: 3px;
+	padding: 3px 6px;
+	text-shadow: 1px 1px 4px #333;
+	font-size: 0.6rem
+}
+
+.postrender .postinner > .postuser .postavatar {
+	margin-top: 1.5rem;
 }
 
 /* Unread posts tag to fit with the emoji icons */
