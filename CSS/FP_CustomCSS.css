@@ -101,3 +101,19 @@ span.userlevel {
     padding-top: 1.7rem;
     top: 0px;
 }
+
+/* Unread posts tag to fit with the emoji icons */
+.unreadposts {
+	position:absolute;
+	top:2px;
+	float:left;
+	left:-51px;
+	background-color: #FF231A;
+	border: 2px solid #000;
+	border-radius: 5px;
+	color:#fff;
+}
+
+.unreadposts::after {
+	content : none;
+}
